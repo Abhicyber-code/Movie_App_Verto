@@ -43,6 +43,11 @@ const Home = () => {
         {searchQuery && (
           <p>{searchResults.length} results for "{searchQuery}"</p>
         )}
+        {!loading && !searchQuery && movies.length === 0 && (
+          <p style={{ color: '#dc3545' }}>
+            Unable to load movies. Please check if the API key is configured.
+          </p>
+        )}
       </div>
 
       <Search />
