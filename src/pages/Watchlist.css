@@ -56,3 +56,120 @@
 .empty-state a:hover {
   background: #0056b3;
 }
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .watchlist {
+    padding: 0 15px;
+  }
+  
+  .header {
+    margin-bottom: 25px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .header p {
+    font-size: 1rem;
+  }
+  
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .empty-state {
+    padding: 50px 15px;
+  }
+  
+  .empty-state h1 {
+    font-size: 2rem;
+  }
+  
+  .empty-state p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .watchlist {
+    padding: 0 10px;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .header p {
+    font-size: 0.95rem;
+  }
+  
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+  
+  .empty-state {
+    padding: 40px 10px;
+  }
+  
+  .empty-state h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .empty-state p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .empty-state a {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+  .watchlist {
+    padding: 0 5px;
+  }
+  
+  .header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+  }
+  
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+  }
+  
+  .empty-state {
+    padding: 30px 5px;
+  }
+  
+  .empty-state h1 {
+    font-size: 1.6rem;
+  }
+  
+  .empty-state p {
+    font-size: 0.95rem;
+  }
+  
+  .empty-state a {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}

@@ -5,3 +5,16 @@
 .main-content {
   padding-bottom: 2rem;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .main-content {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding-bottom: 0.5rem;
+  }
+}

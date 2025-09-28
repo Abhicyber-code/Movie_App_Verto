@@ -19,3 +19,57 @@
   color: #666;
   font-size: 1.1rem;
 }
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .home {
+    padding: 0 15px;
+  }
+  
+  .header {
+    margin-bottom: 25px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .header p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .home {
+    padding: 0 10px;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .header p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+  .home {
+    padding: 0 5px;
+  }
+  
+  .header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+  }
+}

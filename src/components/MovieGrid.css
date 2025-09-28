@@ -17,9 +17,41 @@
   font-size: 1.1rem;
 }
 
+/* Tablet responsiveness */
 @media (max-width: 768px) {
   .movie-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
+  }
+  
+  .loading, .empty {
+    padding: 30px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+  
+  .loading, .empty {
+    padding: 25px 15px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+  }
+  
+  .loading, .empty {
+    padding: 20px 10px;
+    font-size: 0.9rem;
   }
 }

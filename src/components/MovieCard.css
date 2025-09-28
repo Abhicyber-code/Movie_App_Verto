@@ -98,3 +98,69 @@
   color: white;
   cursor: default;
 }
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .info {
+    padding: 12px;
+  }
+  
+  .info h3 {
+    font-size: 1rem;
+  }
+  
+  .year, .rating {
+    font-size: 0.85rem;
+  }
+  
+  .add-btn, .remove-btn, .added {
+    padding: 10px 6px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .movie-card {
+    border-radius: 6px;
+  }
+  
+  .info {
+    padding: 10px;
+  }
+  
+  .info h3 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  
+  .year, .rating {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+  
+  .button-container {
+    padding-top: 10px;
+  }
+  
+  .add-btn, .remove-btn, .added {
+    padding: 8px 6px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+  .info {
+    padding: 8px;
+  }
+  
+  .info h3 {
+    font-size: 0.9rem;
+  }
+  
+  .add-btn, .remove-btn, .added {
+    padding: 8px 4px;
+    font-size: 0.75rem;
+  }
+}
